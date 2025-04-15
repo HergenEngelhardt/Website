@@ -1,0 +1,15 @@
+<nav id="header">
+    <div id="menu" [class.open]="menuOpen">
+        <a href="#personalInfoSection">About me</a>
+        <a href="#skillSection">Skills</a>
+        <a href="#projectList">Projects</a>
+    </div>
+    <div class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="logo-header">
+        <img [src]="assetService.getAssetUrl('img/Logo.jpg')" alt="Logo Hergen Engelhardt">
+    </div>
+</nav>

@@ -1,0 +1,51 @@
+<section class="projectList" id="projectList">
+  <h1>Projekte</h1>
+  <h3>eine kleine Auswahl ein durchgeführten Projekten, welche die Entwicklung der Fähigkeiten präsentieren</h3>
+  
+  <div class="pokedex" (click)="openProjectDetails(projects[0])">
+    <span class="project-title">Pokedex</span>
+    <p>API | JavaScript | HTML | CSS</p>
+  </div>
+
+  <div class="EPL" (click)="openProjectDetails(projects[1])">
+    <span class="project-title">El Polo Loco 2D Spiel</span>
+    <p>HTML | CSS | JavaScript</p>
+  </div>
+
+  <div class="Join" (click)="openProjectDetails(projects[2])">
+    <span class="project-title">JOIN</span>
+    <p>HTML | CSS | JavaScript</p>
+  </div>
+</section>
+
+<div class="overlay" *ngIf="showOverlay && selectedProject" (click)="closeOverlay()">
+  <div class="overlay-content" (click)="$event.stopPropagation()">
+    <span class="close-button" (click)="closeOverlay()">&times;</span>
+    
+    <div class="navigation-arrows">
+      <div class="arrow arrow-left" (click)="previousProject()">&#10094;</div>
+      <div class="arrow arrow-right" (click)="nextProject()">&#10095;</div>
+    </div>
+    
+    <div class="overlay-grid">
+      <div class="project-details">
+        <h2>{{ selectedProject.name }}</h2>
+        <p>{{ selectedProject.longDescription }}</p>
+        
+        <h3>Verwendete Technologien:</h3>
+        <ul class="technologies-list">
+          <li *ngFor="let tech of selectedProject.technologies">{{ tech }}</li>
+        </ul>
+        
+        <div class="project-links">
+          <a [href]="selectedProject.liveUrl" target="_blank" class="btn-primary">Live Demo</a>
+          <a [href]="selectedProject.githubUrl" target="_blank" class="btn-secondary">GitHub</a>
+        </div>
+      </div>
+      
+      <div class="project-image">
+        <img [src]="selectedProject.imagePath" [alt]="selectedProject.name">
+      </div>
+    </div>
+  </div>
+</div>

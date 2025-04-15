@@ -1,0 +1,117 @@
+nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-bottom: 200px;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    > a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(1.08);
+        }
+    }
+}
+
+.logo-header {
+    > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+    
+    span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    &.open {
+        span {
+            &:nth-child(1) {
+                transform: translateY(10.5px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-10.5px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .hamburger {
+        display: flex;
+        order: 1;
+    }
+    
+    .logo-header {
+        order: 2;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 5;
+        
+        &.open {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        > a {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
