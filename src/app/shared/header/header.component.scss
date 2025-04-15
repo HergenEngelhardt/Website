@@ -115,3 +115,9 @@ nav {
         }
     }
 }
+
+@media(max-width: 375px) {
+    nav {
+        margin-bottom: 50px;
+    }
+}

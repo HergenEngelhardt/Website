@@ -39,7 +39,7 @@
         max-width: 500px;
         margin: 0 auto;
         padding: 1.5rem;
-        
+
         form {
             display: flex;
             flex-direction: column;
@@ -52,7 +52,7 @@
             border: none;
             border-radius: 0;
             background: transparent;
-            border-bottom: 2px solid rgba(61, 207, 182, 0.5); 
+            border-bottom: 2px solid rgba(61, 207, 182, 0.5);
             color: white;
             font-family: inherit;
             font-size: 1rem;
@@ -61,10 +61,10 @@
             &::placeholder {
                 color: rgba(255, 255, 255, 0.6);
             }
-            
+
             &:focus {
                 outline: none;
-                border-bottom-color: #3dcfb6; 
+                border-bottom-color: #3dcfb6;
             }
         }
 
@@ -89,5 +89,79 @@
                 background-color: darken(#3dcfb6, 10%);
             }
         }
+    }
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .contactFormular-header,
+        .contactFormular-input {
+            width: 80%;
+            max-width: none;
+        }
+
+        .contactFormular-header {
+             margin-bottom: 2rem;
+             h1 {
+                 font-size: 36px;
+             }
+        }
+
+        .contactFormular-input {
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contactFormular-header,
+        .contactFormular-input {
+            width: 90%;
+        }
+
+         .contactFormular-header h1 {
+            font-size: 30px;
+         }
+
+         .contactFormular-input {
+             padding: 1rem 0.5rem;
+             form {
+                 gap: 1rem;
+             }
+             button {
+                 padding: 0.8rem;
+                 font-size: 0.9rem;
+             }
+         }
+    }
+
+    @media (max-width: 375px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .contactFormular-header,
+        .contactFormular-input {
+            width: 95%; 
+        }
+
+         .contactFormular-header h1 {
+            font-size: 26px; 
+         }
+          .contactFormular-header h3 {
+            font-size: 13px;
+         }
+
+         .contactFormular-input {
+             padding: 0.8rem 0.2rem; 
+             form {
+                 gap: 0.8rem;
+             }
+             button {
+                 padding: 0.7rem;
+                 font-size: 0.85rem;
+             }
+         }
     }
 }
