@@ -1,34 +1,34 @@
 <section class="projectList" id="projectList">
-  <h1>Projekte</h1>
-  <h3>eine kleine Auswahl an durchgeführten Projekten, welche meine Entwicklung im Programmieren aufzeigen</h3>
-  
+  <h1>{{ 'PROJECTS.TITLE' | translate }}</h1>
+  <h3>{{ 'PROJECTS.SUBTITLE' | translate }}</h3>
+
   <div class="pokedex project-item" (click)="openProjectDetails(projects[0])">
     <div class="project-info">
-      <span class="project-title">Pokedex<span class="hover-arrow">↗</span></span>
-      <p>API | JavaScript | HTML | CSS</p>
+      <span class="project-title">{{ projects[0].name }}<span class="hover-arrow">↗</span></span>
+      <p>{{ 'PROJECTS.POKEDEX_TECH' | translate }}</p>
     </div>
     <div class="project-preview">
-      <img [src]="projects[0].imagePath" alt="Pokedex Vorschau">
+      <img [src]="projects[0].imagePath" [alt]="projects[0].name + ' Vorschau'">
     </div>
   </div>
 
   <div class="EPL project-item" (click)="openProjectDetails(projects[1])">
     <div class="project-info">
-      <span class="project-title">El Polo Loco 2D Spiel<span class="hover-arrow">↗</span></span>
-      <p>HTML | CSS | JavaScript</p>
+     <span class="project-title">{{ projects[1].name }}<span class="hover-arrow">↗</span></span>
+      <p>{{ 'PROJECTS.EPL_TECH' | translate }}</p>
     </div>
     <div class="project-preview">
-      <img [src]="projects[1].imagePath" alt="El Pollo Loco Vorschau">
+      <img [src]="projects[1].imagePath" [alt]="projects[1].name + ' Vorschau'">
     </div>
   </div>
 
   <div class="Join project-item" (click)="openProjectDetails(projects[2])">
     <div class="project-info">
-      <span class="project-title">JOIN<span class="hover-arrow">↗</span></span>
-      <p>HTML | CSS | JavaScript</p>
+      <span class="project-title">{{ projects[2].name }}<span class="hover-arrow">↗</span></span>
+      <p>{{ 'PROJECTS.JOIN_TECH' | translate }}</p>
     </div>
     <div class="project-preview">
-      <img [src]="projects[2].imagePath" alt="JOIN Vorschau">
+      <img [src]="projects[2].imagePath" [alt]="projects[2].name + ' Vorschau'">
     </div>
   </div>
 </section>
@@ -36,30 +36,30 @@
 <div class="overlay" *ngIf="showOverlay && selectedProject" (click)="closeOverlay()">
   <div class="overlay-content" (click)="$event.stopPropagation()">
     <span class="close-button" (click)="closeOverlay()">&times;</span>
-    
+
     <div class="navigation-arrows">
       <div class="arrow arrow-left" (click)="previousProject()">&#10094;</div>
       <div class="arrow arrow-right" (click)="nextProject()">&#10095;</div>
     </div>
-    
+
     <div class="overlay-grid">
       <div class="project-details">
         <h2>{{ selectedProject.name }}</h2>
         <p>{{ selectedProject.longDescription }}</p>
-        
-        <h3>Verwendete Technologien:</h3>
+
+        <h3>{{ 'PROJECTS.OVERLAY_USED_TECHNOLOGIES' | translate }}</h3>
         <ul class="technologies-list">
           <li *ngFor="let tech of selectedProject.technologies">{{ tech }}</li>
         </ul>
-        
+
         <div class="project-links">
-          <a [href]="selectedProject.liveUrl" target="_blank" class="btn-primary">Live Demo</a>
-          <a [href]="selectedProject.githubUrl" target="_blank" class="btn-secondary">GitHub</a>
+          <a [href]="selectedProject.liveUrl" target="_blank" class="btn-primary">{{ 'PROJECTS.OVERLAY_LIVE_DEMO' | translate }}</a>
+          <a [href]="selectedProject.githubUrl" target="_blank" class="btn-secondary">{{ 'PROJECTS.OVERLAY_GITHUB' | translate }}</a>
         </div>
       </div>
-      
+
       <div class="project-image">
-        <img [src]="selectedProject.imagePath" [alt]="selectedProject.name">
+        <img [src]="selectedProject.imagePath" [alt]="'PROJECTS.OVERLAY_PROJECT_IMAGE_ALT' | translate:{projectName: selectedProject.name}">
       </div>
     </div>
   </div>

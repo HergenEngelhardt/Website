@@ -1,31 +1,21 @@
 <div class="skill-section" id="skillSection">
     <div class="skill-info">
-        <h3>Meine Skills...</h3>
-        <p>Ich entwickle moderne Webanwendungen mit HTML, CSS und JavaScript
-            und setze dabei auf TypeScript und Angular, um skalierbare und performante
-            Lösungen zu schaffen. UX und Design sind mir wichtig, daher arbeite ich gerne mit Figma.
-            Mit Firebase baue ich Datenbanken und Hosting ein, während Git für
-            saubere Versionskontrolle sorgt. Durch Scrum und agile Methoden bleibe ich flexibel und
-            arbeite effizient im Team. Webentwicklung ist ständig im Wandel –
-            genau das macht es für mich so spannend! Ich liebe es, neue Technologien zu entdecken und mein Wissen stetig
-            zu
-            erweitern.</p>
-        <p>Falls du noch eine Fähigkeit suchst oder dich über spannende Projekte austauschen möchtest – melde dich gerne
-            bei
-            mir!
-            Ich freue mich darauf, mein Wissen weiter auszubauen und neue Herausforderungen anzugehen. </p>
+        <h3>{{ 'SKILLS.TITLE' | translate }}</h3>
+        <p>{{ 'SKILLS.TEXT_P1' | translate }}</p>
+        <p>{{ 'SKILLS.TEXT_P2' | translate }}</p>
+        <p>{{ 'SKILLS.TEXT_P3' | translate }}</p>
     </div>
     <div class="skill-icons">
-        <img [src]="assetService.getAssetUrl('tecicons/html.svg')" alt="HTML Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/css.svg')" alt="CSS Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/js.svg')" alt="JavaScript Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/md.svg')" alt="Material Design Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/angular.svg')" alt="Angular Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/fb.svg')" alt="Firebase Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/git.svg')" alt="Git Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/restapi.svg')" alt="REST API Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/scrum.svg')" alt="Scrum Icon">
+        <img [src]="assetService.getAssetUrl('tecicons/html.svg')" [alt]="'SKILLS.ICON_ALT_HTML' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/css.svg')" [alt]="'SKILLS.ICON_ALT_CSS' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/js.svg')" [alt]="'SKILLS.ICON_ALT_JS' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/md.svg')" [alt]="'SKILLS.ICON_ALT_MD' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/angular.svg')" [alt]="'SKILLS.ICON_ALT_ANGULAR' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/fb.svg')" [alt]="'SKILLS.ICON_ALT_FIREBASE' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/git.svg')" [alt]="'SKILLS.ICON_ALT_GIT' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/restapi.svg')" [alt]="'SKILLS.ICON_ALT_RESTAPI' | translate">
+        <img [src]="assetService.getAssetUrl('tecicons/scrum.svg')" [alt]="'SKILLS.ICON_ALT_SCRUM' | translate">
         <img [src]="assetService.getAssetUrl('tecicons/ts.svg')" alt="TypeScript Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/mind.svg')" alt="Mind Map Icon">
+        <img [src]="assetService.getAssetUrl('tecicons/mind.svg')" [alt]="'SKILLS.ICON_ALT_FIGMA' | translate">
     </div>
 </div>

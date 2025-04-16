@@ -1,40 +1,46 @@
 <section id="contactFormular">
     <div class="contactFormular-header">
-        <p>Kontaktieren Sie mich</p>
-        <h1>Ich freue mich auf Ihre Nachricht</h1>
-        <h3>Ich bin immer offen für neue Herausforderungen und spannende Projekte.
-            Lassen Sie uns in Kontakt treten!</h3>
+        <p>{{ 'CONTACT.TITLE' | translate }}</p>
+        <h1>{{ 'CONTACT.SUBTITLE' | translate }}</h1>
+        <h3>{{ 'CONTACT.INTRO' | translate }}</h3>
     </div>
     <div class="contactFormular-input">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <span>Wie lautet Ihr Name?</span>
-            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="Ihren Namen bitte" required #nameInput="ngModel">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+            <span>{{ 'CONTACT.NAME_LABEL' | translate }}</span>
+            <input [(ngModel)]="contactData.name" type="text" name="name" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" required #nameInput="ngModel" [class.invalid]="nameInput.invalid && nameInput.touched">
             @if(nameInput.invalid && nameInput.touched) {
-                <p class="error">Bitte geben Sie Ihren Namen ein.</p>
+                <p class="error">{{ 'CONTACT.NAME_ERROR_REQUIRED' | translate }}</p>
             }
-            <span>Wie lautet Ihre E-Mail?</span>
-            <input [(ngModel)]="contactData.email" type="email" name="email" placeholder="Ihre@Mail.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required #emailInput="ngModel">
+
+            <span>{{ 'CONTACT.EMAIL_LABEL' | translate }}</span>
+            <input [(ngModel)]="contactData.email" type="email" name="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required #emailInput="ngModel" [class.invalid]="emailInput.invalid && emailInput.touched">
              @if(emailInput.invalid && emailInput.touched) {
                 @if (emailInput.errors?.['required']) {
-                     <p class="error">Bitte geben Sie Ihre E-Mail-Adresse ein.</p>
+                     <p class="error">{{ 'CONTACT.EMAIL_ERROR_REQUIRED' | translate }}</p>
                 } @else if (emailInput.errors?.['pattern']) {
-                     <p class="error">Bitte geben Sie eine gültige E-Mail-Adresse ein.</p>
+                     <p class="error">{{ 'CONTACT.EMAIL_ERROR_PATTERN' | translate }}</p>
                 }
             }
-            <span>Wie kann ich Ihnen weiterhelfen?</span>
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" rows="5" placeholder="Teilen Sie mir mit, wie ich Ihnen weiterhelfen kann..." required>
+
+            <span>{{ 'CONTACT.MESSAGE_LABEL' | translate }}</span>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" rows="5" [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate" required [class.invalid]="message.invalid && message.touched">
             </textarea>
             @if(message.invalid && message.touched) {
-                <p class="error">Bitte geben Sie eine Nachricht ein.</p>
+                <p class="error">{{ 'CONTACT.MESSAGE_ERROR_REQUIRED' | translate }}</p>
             }
+
             <div class="privacy-policy">
-                <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted" required #privacyCheckbox="ngModel">
-                <label for="privacy">Ich akzeptiere die <a href="/datenschutz" target="_blank">Datenschutzrichtlinien</a> und bin einverstanden damit, dass meine Daten verarbeitet werden dürfen.</label>
-                 @if(privacyCheckbox.invalid && privacyCheckbox.touched) {
-                    <p class="error">Sie müssen die Datenschutzrichtlinien akzeptieren.</p>
+                <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted" required #privacyCheckbox="ngModel" [class.invalid]="privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)">
+                <label for="privacy">
+                    {{ 'CONTACT.PRIVACY_POLICY' | translate }}
+                    <a href="/datenschutz" target="_blank">{{ 'CONTACT.PRIVACY_POLICY_LINK' | translate }}</a>
+                </label>
+                 @if(privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)) {
+                    <p class="error">{{ 'CONTACT.PRIVACY_ERROR_REQUIRED' | translate }}</p>
                 }
             </div>
-            <button type="submit" [disabled]="contactForm.invalid">Absenden</button>
+
+            <button type="submit" [disabled]="contactForm.invalid">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
         </form>
     </div>
-    </section>
+</section>

@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core'; 
 
 @Component({
   selector: 'app-contact-formular',
   standalone: true,
   imports: [
     FormsModule,
-    CommonModule
+    CommonModule,
+    TranslateModule 
   ],
   templateUrl: './contact-formular.component.html',
   styleUrl: './contact-formular.component.scss'
@@ -24,10 +26,10 @@ export class ContactFormularComponent {
     privacyPolicyAccepted: false
   };
 
-  mailTest = true;
+  mailTest = true; 
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://deineDomain.de/sendMail.php', 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -42,7 +44,7 @@ export class ContactFormularComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            console.log(response); 
             ngForm.resetForm();
           },
           error: (error) => {
@@ -51,8 +53,12 @@ export class ContactFormularComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+       console.log('Mail Test: Form valid and submitted', this.contactData); 
       ngForm.resetForm();
+    } else {
+       Object.values(ngForm.controls).forEach(control => {
+        control.markAsTouched();
+      });
     }
   }
 }

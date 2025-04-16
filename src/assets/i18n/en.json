@@ -1,0 +1,84 @@
+{
+    "HEADER": {
+      "ABOUT_ME": "About me",
+      "SKILLS": "Skills",
+      "PROJECTS": "Projects",
+      "LOGO_ALT": "Logo Hergen Engelhardt"
+    },
+    "INTRODUCE": {
+      "HEADLINE_PART1": "Portfolio of",
+      "HEADLINE_PART2": "Hergen Engelhardt",
+      "CONTACT_ME": "Contact me",
+      "MY_PROJECTS": "My Projects",
+      "TICKER_REMOTE": "Open for remote positions",
+      "TICKER_CONSULTING": "IT Consulting",
+      "TICKER_FRONTEND": "Frontend Developer",
+      "TICKER_LOCATION": "Near Darmstadt",
+      "TICKER_ORIGIN": "From Hesse",
+      "EMAIL": "Engelhardt.Hergen@gmail.com",
+      "GITHUB_ALT": "GitHub",
+      "LINKEDIN_ALT": "LinkedIn"
+    },
+    "PERSONAL_INFO": {
+      "TITLE": "About me...",
+      "TEXT_P1": "I am Hergen Engelhardt and started my professional journey in the hotel industry before moving into customer service and sales. With my experience in logistics and purchasing, I have acquired a broad skill set.",
+      "TEXT_P2": "Recently, I completed further training as a frontend developer and am now expanding my knowledge in the backend. I work with HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, and Scrum.",
+      "TEXT_P3": "Besides my passion for IT, I volunteer with the local fire department and enjoy discovering new places, cultures, and culinary highlights while traveling.",
+      "PROFILE_IMAGE_ALT": "Portrait"
+    },
+    "SKILLS": {
+      "TITLE": "My Skills...",
+      "TEXT_P1": "I develop modern web applications using HTML, CSS, and JavaScript, relying on TypeScript and Angular to create scalable and high-performance solutions. UX and design are important to me, so I enjoy working with Figma.",
+      "TEXT_P2": "I integrate databases and hosting with Firebase, while Git ensures clean version control. Using Scrum and agile methodologies, I remain flexible and work efficiently in a team. Web development is constantly evolving – that's exactly what makes it so exciting for me! I love discovering new technologies and continuously expanding my knowledge.",
+      "TEXT_P3": "If you are looking for a specific skill or want to discuss exciting projects – feel free to contact me! I look forward to further expanding my knowledge and tackling new challenges.",
+      "ICON_ALT_HTML": "HTML Icon",
+      "ICON_ALT_CSS": "CSS Icon",
+      "ICON_ALT_JS": "JavaScript Icon",
+      "ICON_ALT_MD": "Material Design Icon",
+      "ICON_ALT_ANGULAR": "Angular Icon",
+      "ICON_ALT_FIREBASE": "Firebase Icon",
+      "ICON_ALT_GIT": "Git Icon",
+      "ICON_ALT_RESTAPI": "REST API Icon",
+      "ICON_ALT_SCRUM": "Scrum Icon",
+      "ICON_ALT_FIGMA": "Figma Icon"
+    },
+    "PROJECTS": {
+      "TITLE": "Projects",
+      "SUBTITLE": "A small selection of completed projects that showcase my development in programming",
+      "POKEDEX_TITLE": "Pokedex",
+      "POKEDEX_TECH": "API | JavaScript | HTML | CSS",
+      "EPL_TITLE": "El Pollo Loco",
+      "EPL_TECH": "HTML | CSS | JavaScript",
+      "JOIN_TITLE": "JOIN",
+      "JOIN_TECH": "HTML | CSS | JavaScript",
+      "OVERLAY_USED_TECHNOLOGIES": "Used Technologies:",
+      "OVERLAY_LIVE_DEMO": "Live Demo",
+      "OVERLAY_GITHUB": "GitHub",
+      "OVERLAY_PROJECT_IMAGE_ALT": "Project image for {{projectName}}" 
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "SUBTITLE": "Do you have questions or want to collaborate with me?",
+      "INTRO": "Write me a message...",
+      "NAME_LABEL": "Your Name",
+      "NAME_PLACEHOLDER": "Your Name",
+      "NAME_ERROR_REQUIRED": "Please enter your name.",
+      "EMAIL_LABEL": "Your Email",
+      "EMAIL_PLACEHOLDER": "your@mail.com",
+      "EMAIL_ERROR_REQUIRED": "Please enter your email address.",
+      "EMAIL_ERROR_PATTERN": "Please enter a valid email address.",
+      "MESSAGE_LABEL": "How can I help you?",
+      "MESSAGE_PLACEHOLDER": "Let me know how I can help you...",
+      "MESSAGE_ERROR_REQUIRED": "Please enter your message.",
+      "PRIVACY_POLICY": "I have read and accept the privacy policy.",
+      "PRIVACY_POLICY_LINK": "Privacy Policy", 
+      "PRIVACY_ERROR_REQUIRED": "Please accept the privacy policy.",
+      "SEND_BUTTON": "Send"
+    },
+    "FOOTER": {
+      "IMPRINT": "Imprint",
+      "COPYRIGHT": "© Hergen Engelhardt 2024",
+      "GITHUB_ALT": "GitHub",
+      "LINKEDIN_ALT": "LinkedIn"
+    }
+  }

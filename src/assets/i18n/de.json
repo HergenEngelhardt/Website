@@ -1,0 +1,84 @@
+{
+    "HEADER": {
+      "ABOUT_ME": "Über mich",
+      "SKILLS": "Skills",
+      "PROJECTS": "Projekte",
+      "LOGO_ALT": "Logo Hergen Engelhardt"
+    },
+    "INTRODUCE": {
+      "HEADLINE_PART1": "Portfolio von",
+      "HEADLINE_PART2": "Hergen Engelhardt",
+      "CONTACT_ME": "Kontaktieren Sie mich",
+      "MY_PROJECTS": "Meine Projekte",
+      "TICKER_REMOTE": "Offen für Remotestellen",
+      "TICKER_CONSULTING": "IT Consulting",
+      "TICKER_FRONTEND": "Frontend Developer",
+      "TICKER_LOCATION": "Nähe Darmstadt",
+      "TICKER_ORIGIN": "Aus Hessen",
+      "EMAIL": "Engelhardt.Hergen@gmail.com",
+      "GITHUB_ALT": "GitHub",
+      "LINKEDIN_ALT": "LinkedIn"
+    },
+    "PERSONAL_INFO": {
+      "TITLE": "Über mich...",
+      "TEXT_P1": "Ich bin Hergen Engelhardt und habe meine berufliche Reise in der Hotellerie begonnen, bevor ich in den Kundenservice und Vertrieb wechselte. Mit meiner Erfahrung in Logistik und Einkauf habe ich mir ein breites Skillset angeeignet.",
+      "TEXT_P2": "Vor Kurzem habe ich eine Weiterbildung zum Frontend-Entwickler abgeschlossen und baue nun mein Wissen im Backend weiter aus. Ich arbeite mit HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git und Scrum.",
+      "TEXT_P3": "Neben meiner Leidenschaft für die IT engagiere ich mich ehrenamtlich bei der Freiwilligen Feuerwehr und entdecke gerne neue Orte, Kulturen und kulinarische Highlights auf Reisen.",
+      "PROFILE_IMAGE_ALT": "Portrait"
+    },
+    "SKILLS": {
+      "TITLE": "Meine Skills...",
+      "TEXT_P1": "Ich entwickle moderne Webanwendungen mit HTML, CSS und JavaScript und setze dabei auf TypeScript und Angular, um skalierbare und performante Lösungen zu schaffen. UX und Design sind mir wichtig, daher arbeite ich gerne mit Figma.",
+      "TEXT_P2": "Mit Firebase baue ich Datenbanken und Hosting ein, während Git für saubere Versionskontrolle sorgt. Durch Scrum und agile Methoden bleibe ich flexibel und arbeite effizient im Team. Webentwicklung ist ständig im Wandel – genau das macht es für mich so spannend! Ich liebe es, neue Technologien zu entdecken und mein Wissen stetig zu erweitern.",
+      "TEXT_P3": "Falls du noch eine Fähigkeit suchst oder dich über spannende Projekte austauschen möchtest – melde dich gerne bei mir! Ich freue mich darauf, mein Wissen weiter auszubauen und neue Herausforderungen anzugehen.",
+      "ICON_ALT_HTML": "HTML Icon",
+      "ICON_ALT_CSS": "CSS Icon",
+      "ICON_ALT_JS": "JavaScript Icon",
+      "ICON_ALT_MD": "Material Design Icon",
+      "ICON_ALT_ANGULAR": "Angular Icon",
+      "ICON_ALT_FIREBASE": "Firebase Icon",
+      "ICON_ALT_GIT": "Git Icon",
+      "ICON_ALT_RESTAPI": "REST API Icon",
+      "ICON_ALT_SCRUM": "Scrum Icon",
+      "ICON_ALT_FIGMA": "Figma Icon"
+    },
+    "PROJECTS": {
+      "TITLE": "Projekte",
+      "SUBTITLE": "Eine kleine Auswahl an durchgeführten Projekten, welche meine Entwicklung im Programmieren aufzeigen",
+      "POKEDEX_TITLE": "Pokedex",
+      "POKEDEX_TECH": "API | JavaScript | HTML | CSS",
+      "EPL_TITLE": "El Polo Loco",
+      "EPL_TECH": "HTML | CSS | JavaScript",
+      "JOIN_TITLE": "JOIN",
+      "JOIN_TECH": "HTML | CSS | JavaScript",
+      "OVERLAY_USED_TECHNOLOGIES": "Verwendete Technologien:",
+      "OVERLAY_LIVE_DEMO": "Live Demo",
+      "OVERLAY_GITHUB": "GitHub",
+      "OVERLAY_PROJECT_IMAGE_ALT": "Projektbild für {{projectName}}" 
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "SUBTITLE": "Haben Sie Fragen oder möchten Sie mit mir zusammenarbeiten?",
+      "INTRO": "Schreiben Sie mir eine Nachricht...",
+      "NAME_LABEL": "Ihr Name",
+      "NAME_PLACEHOLDER": "Ihr Name",
+      "NAME_ERROR_REQUIRED": "Bitte geben Sie Ihren Namen ein.",
+      "EMAIL_LABEL": "Ihre E-Mail",
+      "EMAIL_PLACEHOLDER": "Ihre@Mail.com",
+      "EMAIL_ERROR_REQUIRED": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      "EMAIL_ERROR_PATTERN": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "MESSAGE_LABEL": "Wie kann ich Ihnen weiterhelfen?",
+      "MESSAGE_PLACEHOLDER": "Teilen Sie mir mit, wie ich Ihnen weiterhelfen kann...",
+      "MESSAGE_ERROR_REQUIRED": "Bitte geben Sie Ihre Nachricht ein.",
+      "PRIVACY_POLICY": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie.",
+      "PRIVACY_POLICY_LINK": "Datenschutzerklärung", 
+      "PRIVACY_ERROR_REQUIRED": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+      "SEND_BUTTON": "Senden"
+    },
+    "FOOTER": {
+      "IMPRINT": "Impressum",
+      "COPYRIGHT": "© Hergen Engelhardt 2024",
+      "GITHUB_ALT": "GitHub",
+      "LINKEDIN_ALT": "LinkedIn"
+    }
+  }

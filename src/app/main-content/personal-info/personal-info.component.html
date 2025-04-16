@@ -1,19 +1,12 @@
 <section>
     <div class="personal-info-section" id="personalInfoSection">
-          <img class="profile-image" [src]="assetService.getAssetUrl('img/leMe.png')" alt="Portrait">
-        
+          <img class="profile-image" [src]="assetService.getAssetUrl('img/leMe.png')" [alt]="'PERSONAL_INFO.PROFILE_IMAGE_ALT' | translate">
+
           <div class="personal-info">
-        <h3>Über mich...</h3>
-        <p>Ich bin Hergen Engelhardt und habe meine berufliche Reise
-            in der Hotellerie begonnen, bevor ich in den Kundenservice
-            und Vertrieb wechselte. Mit meiner Erfahrung in Logistik und
-            Einkauf habe ich mir ein breites Skillset angeeignet.
-            Vor Kurzem habe ich eine Weiterbildung zum Frontend-Entwickler abgeschlossen
-            und baue nun mein Wissen im Backend weiter aus. Ich arbeite mit HTML,
-            CSS, JavaScript, TypeScript, Angular, Firebase, Git und Scrum.
-            Neben meiner Leidenschaft für die IT engagiere ich mich ehrenamtlich
-            bei der Freiwilligen Feuerwehr und entdecke gerne neue Orte,
-            Sportarten und kulinarische Highlights.</p>
+        <h3>{{ 'PERSONAL_INFO.TITLE' | translate }}</h3>
+        <p>{{ 'PERSONAL_INFO.TEXT_P1' | translate }}</p>
+        <p>{{ 'PERSONAL_INFO.TEXT_P2' | translate }}</p>
+        <p>{{ 'PERSONAL_INFO.TEXT_P3' | translate }}</p>
     </div>
 </div>
 </section>
