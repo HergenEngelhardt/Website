@@ -1,19 +1,40 @@
 <section id="contactFormular">
-<div class="contactFormular-header">
-    <p>Kontaktieren Sie mich</p>
-    <h1>Ich freue mich auf Ihre Nachricht</h1>
-    <h3>Ich bin immer offen für neue Herausforderungen und spannende Projekte. 
-        Lassen Sie uns in Kontakt treten!</h3>
-</div>
-<div class="contactFormular-input">
-    <form action="https://formspree.io/f/xjvjlqzj" method="POST">
-        <span>Wie lautet Ihr Name?</span>
-        <input type="text" name="name" placeholder="Ihren Namen bitte" required>
-        <span>Wie lautet Ihre E-Mail?</span>
-        <input type="email" name="email" placeholder="Ihre@Mail.com" required>
-        <span>Wie kann ich Ihnen weiterhelfen?</span>
-        <textarea name="message" rows="5" placeholder="Teilen Sie mir mit, wie ich Ihnen weiterhelfen kann..."></textarea>
-        <button type="submit">Absenden</button>
-    </form>
-</div>
-</section>
+    <div class="contactFormular-header">
+        <p>Kontaktieren Sie mich</p>
+        <h1>Ich freue mich auf Ihre Nachricht</h1>
+        <h3>Ich bin immer offen für neue Herausforderungen und spannende Projekte.
+            Lassen Sie uns in Kontakt treten!</h3>
+    </div>
+    <div class="contactFormular-input">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <span>Wie lautet Ihr Name?</span>
+            <input [(ngModel)]="contactData.name" type="text" name="name" placeholder="Ihren Namen bitte" required #nameInput="ngModel">
+            @if(nameInput.invalid && nameInput.touched) {
+                <p class="error">Bitte geben Sie Ihren Namen ein.</p>
+            }
+            <span>Wie lautet Ihre E-Mail?</span>
+            <input [(ngModel)]="contactData.email" type="email" name="email" placeholder="Ihre@Mail.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required #emailInput="ngModel">
+             @if(emailInput.invalid && emailInput.touched) {
+                @if (emailInput.errors?.['required']) {
+                     <p class="error">Bitte geben Sie Ihre E-Mail-Adresse ein.</p>
+                } @else if (emailInput.errors?.['pattern']) {
+                     <p class="error">Bitte geben Sie eine gültige E-Mail-Adresse ein.</p>
+                }
+            }
+            <span>Wie kann ich Ihnen weiterhelfen?</span>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" rows="5" placeholder="Teilen Sie mir mit, wie ich Ihnen weiterhelfen kann..." required>
+            </textarea>
+            @if(message.invalid && message.touched) {
+                <p class="error">Bitte geben Sie eine Nachricht ein.</p>
+            }
+            <div class="privacy-policy">
+                <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted" required #privacyCheckbox="ngModel">
+                <label for="privacy">Ich akzeptiere die <a href="/datenschutz" target="_blank">Datenschutzrichtlinien</a> und bin einverstanden damit, dass meine Daten verarbeitet werden dürfen.</label>
+                 @if(privacyCheckbox.invalid && privacyCheckbox.touched) {
+                    <p class="error">Sie müssen die Datenschutzrichtlinien akzeptieren.</p>
+                }
+            </div>
+            <button type="submit" [disabled]="contactForm.invalid">Absenden</button>
+        </form>
+    </div>
+    </section>
