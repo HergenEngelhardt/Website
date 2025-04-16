@@ -34,11 +34,11 @@
 
     .project-preview {
         position: absolute;
-        right: -270px; 
+        right: -65%;
         top: 50%;
-        transform: translateY(-50%) translateX(30px); 
-        width: 200px; 
-        height: 120px; 
+        transform: translateY(-50%) translateX(30px);
+        width: 262px;
+        height: 215px;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
