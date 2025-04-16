@@ -16,9 +16,10 @@ export class HeaderComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
-  switchLanguage(language: string) {
-    this.translate.use(language);
-    this.menuOpen = false;
+  toggleLanguage(event: Event) {
+    const checkbox = event.target as HTMLInputElement;
+    const targetLang = checkbox.checked ? 'en' : 'de'; 
+    this.translate.use(targetLang);
   }
   constructor(public assetService: AssetService) {}
 }
