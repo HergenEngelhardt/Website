@@ -2,19 +2,34 @@
   <h1>Projekte</h1>
   <h3>eine kleine Auswahl an durchgeführten Projekten, welche meine Entwicklung im Programmieren aufzeigen</h3>
   
-  <div class="pokedex" (click)="openProjectDetails(projects[0])">
-    <span class="project-title">Pokedex<span class="hover-arrow">↗</span></span>
-    <p>API | JavaScript | HTML | CSS</p>
+  <div class="pokedex project-item" (click)="openProjectDetails(projects[0])">
+    <div class="project-info">
+      <span class="project-title">Pokedex<span class="hover-arrow">↗</span></span>
+      <p>API | JavaScript | HTML | CSS</p>
+    </div>
+    <div class="project-preview">
+      <img [src]="projects[0].imagePath" alt="Pokedex Vorschau">
+    </div>
   </div>
 
-  <div class="EPL" (click)="openProjectDetails(projects[1])">
-    <span class="project-title">El Polo Loco 2D Spiel<span class="hover-arrow">↗</span></span>
-    <p>HTML | CSS | JavaScript</p>
+  <div class="EPL project-item" (click)="openProjectDetails(projects[1])">
+    <div class="project-info">
+      <span class="project-title">El Polo Loco 2D Spiel<span class="hover-arrow">↗</span></span>
+      <p>HTML | CSS | JavaScript</p>
+    </div>
+    <div class="project-preview">
+      <img [src]="projects[1].imagePath" alt="El Pollo Loco Vorschau">
+    </div>
   </div>
 
-  <div class="Join" (click)="openProjectDetails(projects[2])">
-    <span class="project-title">JOIN<span class="hover-arrow">↗</span></span>
-    <p>HTML | CSS | JavaScript</p>
+  <div class="Join project-item" (click)="openProjectDetails(projects[2])">
+    <div class="project-info">
+      <span class="project-title">JOIN<span class="hover-arrow">↗</span></span>
+      <p>HTML | CSS | JavaScript</p>
+    </div>
+    <div class="project-preview">
+      <img [src]="projects[2].imagePath" alt="JOIN Vorschau">
+    </div>
   </div>
 </section>
 
