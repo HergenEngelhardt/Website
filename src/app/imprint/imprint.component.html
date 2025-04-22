@@ -1,0 +1,31 @@
+<div class="imprint-container">
+    <a routerLink="/" class="close-button" title="Zurück zur Hauptseite">×</a>
+    <h1>{{ 'IMPRINT.TITLE' | translate }}</h1>
+    <p>{{ 'IMPRINT.LEGAL_NOTICE' | translate }}</p>
+    <p>{{ 'IMPRINT.NAME' | translate }}<br>
+        <br>
+        {{ 'IMPRINT.STREET' | translate }}<br>
+        {{ 'IMPRINT.CITY' | translate }} <br>
+    </p>
+    <p> <strong>{{ 'IMPRINT.REPRESENTED_BY' | translate }}</strong><br>
+        {{ 'IMPRINT.NAME' | translate }}<br> 
+    </p>
+    <p><strong>{{ 'IMPRINT.CONTACT' | translate }}</strong> <br>
+        {{ 'IMPRINT.PHONE_LABEL' | translate }}: {{ 'IMPRINT.PHONE_NUMBER' | translate }}<br>
+        {{ 'IMPRINT.EMAIL_LABEL' | translate }}: <a [href]="'mailto:' + ('IMPRINT.EMAIL_ADDRESS' | translate)">{{ 'IMPRINT.EMAIL_ADDRESS' | translate }}</a><br>
+    </p>
+    <p><strong>{{ 'IMPRINT.DISCLAIMER_TITLE' | translate }}</strong><br><br><strong>{{ 'IMPRINT.LIABILITY_CONTENT_TITLE' | translate }}</strong><br><br>
+        {{ 'IMPRINT.LIABILITY_CONTENT_TEXT' | translate }}
+        <br><br><strong>{{ 'IMPRINT.LIABILITY_LINKS_TITLE' | translate }}</strong><br><br>
+        {{ 'IMPRINT.LIABILITY_LINKS_TEXT' | translate }}
+        <br><br><strong>{{ 'IMPRINT.COPYRIGHT_TITLE' | translate }}</strong><br><br>
+        {{ 'IMPRINT.COPYRIGHT_TEXT' | translate }}
+        <br><br><strong>{{ 'IMPRINT.DATA_PROTECTION_TITLE' | translate }}</strong><br><br>
+        {{ 'IMPRINT.DATA_PROTECTION_TEXT' | translate }}
+        <br>
+        <br><br><strong>{{ 'IMPRINT.GOOGLE_ANALYTICS_TITLE' | translate }}</strong><br><br>
+        {{ 'IMPRINT.GOOGLE_ANALYTICS_TEXT' | translate }}
+    </p><br>
+    {{ 'IMPRINT.GENERATOR_TEXT' | translate }} <a href="https://impressum-generator.de" rel="dofollow" target="_blank">Impressum-Generator.de</a>.
+    {{ 'IMPRINT.POWERED_BY' | translate }} <a href="https://www.kanzlei-hasselbach.de/" rel="nofollow" target="_blank">Franziska Hasselbach, Bonn</a>.
+</div>

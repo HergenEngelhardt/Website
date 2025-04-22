@@ -1,20 +1,19 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http'; // Import provideHttpClient and withFetch
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core'; // Import TranslateModule and TranslateLoader
-import { TranslateHttpLoader } from '@ngx-translate/http-loader'; // Import TranslateHttpLoader
+import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http'; 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core'; 
+import { TranslateHttpLoader } from '@ngx-translate/http-loader'; 
 
 import { routes } from './app.routes';
 
-// AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json'); // Path to your translation files
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json'); 
 }
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideHttpClient(withFetch()), 
+    provideHttpClient(), 
     importProvidersFrom( 
       TranslateModule.forRoot({
         loader: {
