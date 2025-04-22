@@ -29,7 +29,7 @@ export class ContactFormularComponent {
   mailTest = false; 
   messageSent = false;
   post = {
-    endPoint: 'engelhardt-hergen.de', 
+    endPoint: 'www.engelhardt-hergen.de', 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

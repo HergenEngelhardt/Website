@@ -21,16 +21,16 @@
     },
     "PERSONAL_INFO": {
       "TITLE": "About me...",
-      "TEXT_P1": "I am Hergen Engelhardt and started my professional journey in the hotel industry before moving into customer service and sales. With my experience in logistics and purchasing, I have acquired a broad skill set.",
-      "TEXT_P2": "Recently, I completed further training as a frontend developer and am now expanding my knowledge in the backend. I work with HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, and Scrum.",
-      "TEXT_P3": "Besides my passion for IT, I volunteer with the local fire department and enjoy discovering new places, cultures, and culinary highlights while traveling.",
+      "TEXT_P1": "I am Hergen Engelhardt and bring diverse professional experience from the hotel industry, customer service, sales, as well as logistics and purchasing. These roles have significantly shaped my organizational talent, communication skills, and solution-oriented approach.",
+      "TEXT_P2": "By successfully completing further training as a frontend developer, I have laid the foundation for my career in IT. I am currently deepening my knowledge in the backend area. I work with modern technologies such as HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, and Scrum – always striving to write clean and user-friendly code.",
+      "TEXT_P3": "Alongside my professional development, I volunteer with the local fire department and am a passionate traveler – always curious about new places, cultures, and culinary discoveries.",
       "PROFILE_IMAGE_ALT": "Portrait"
     },
     "SKILLS": {
       "TITLE": "My Skills...",
-      "TEXT_P1": "I develop modern web applications using HTML, CSS, and JavaScript, relying on TypeScript and Angular to create scalable and high-performance solutions. UX and design are important to me, so I enjoy working with Figma.",
-      "TEXT_P2": "I integrate databases and hosting with Firebase, while Git ensures clean version control. Using Scrum and agile methodologies, I remain flexible and work efficiently in a team. Web development is constantly evolving – that's exactly what makes it so exciting for me! I love discovering new technologies and continuously expanding my knowledge.",
-      "TEXT_P3": "If you are looking for a specific skill or want to discuss exciting projects – feel free to contact me! I look forward to further expanding my knowledge and tackling new challenges.",
+      "TEXT_P1": "I develop modern web applications using HTML, CSS, and JavaScript, specifically utilizing TypeScript and Angular to create high-performance and scalable solutions. UX and design are important to me – that's why I enjoy working with Figma to design user-friendly interfaces.",
+      "TEXT_P2": "For data storage and hosting, I use Firebase, while Git ensures structured version control. Agile methods like Scrum allow me to react flexibly to new requirements and work efficiently in a team.",
+      "TEXT_P3": "I have gained initial practical experience through projects such as: – a delivery app – a Pokédex with search functionality – a Kanban board – my own 2D game. These projects have shown me how much joy the combination of creative thinking and technical implementation brings – and how much potential lies in every new development step.",
       "ICON_ALT_HTML": "HTML Icon",
       "ICON_ALT_CSS": "CSS Icon",
       "ICON_ALT_JS": "JavaScript Icon",
