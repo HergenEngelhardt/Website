@@ -40,11 +40,18 @@
     }
 
     .success-message {
-        color: #3DCFB6; 
-        margin-top: 10px;
-        margin-bottom: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(16, 22, 45, 0.9);
+        color: #3DCFB6;
+        padding: 20px 40px;
+        border-radius: 8px;
+        z-index: 1000;
         text-align: center;
         font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 992px) {

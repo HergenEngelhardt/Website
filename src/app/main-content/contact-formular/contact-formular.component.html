@@ -7,40 +7,49 @@
     <div class="contactFormular-input">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
             <span>{{ 'CONTACT.NAME_LABEL' | translate }}</span>
-            <input [(ngModel)]="contactData.name" type="text" name="name" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" required #nameInput="ngModel" [class.invalid]="nameInput.invalid && nameInput.touched">
+            <input [(ngModel)]="contactData.name" type="text" name="name"
+                [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" required #nameInput="ngModel"
+                [class.invalid]="nameInput.invalid && nameInput.touched">
             @if(nameInput.invalid && nameInput.touched) {
-                <p class="error">{{ 'CONTACT.NAME_ERROR_REQUIRED' | translate }}</p>
+            <p class="error">{{ 'CONTACT.NAME_ERROR_REQUIRED' | translate }}</p>
             }
 
             <span>{{ 'CONTACT.EMAIL_LABEL' | translate }}</span>
-            <input [(ngModel)]="contactData.email" type="email" name="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required #emailInput="ngModel" [class.invalid]="emailInput.invalid && emailInput.touched">
-             @if(emailInput.invalid && emailInput.touched) {
-                @if (emailInput.errors?.['required']) {
-                     <p class="error">{{ 'CONTACT.EMAIL_ERROR_REQUIRED' | translate }}</p>
-                } @else if (emailInput.errors?.['pattern']) {
-                     <p class="error">{{ 'CONTACT.EMAIL_ERROR_PATTERN' | translate }}</p>
-                }
+            <input [(ngModel)]="contactData.email" type="email" name="email"
+                [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate"
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required #emailInput="ngModel"
+                [class.invalid]="emailInput.invalid && emailInput.touched">
+            @if(emailInput.invalid && emailInput.touched) {
+            @if (emailInput.errors?.['required']) {
+            <p class="error">{{ 'CONTACT.EMAIL_ERROR_REQUIRED' | translate }}</p>
+            } @else if (emailInput.errors?.['pattern']) {
+            <p class="error">{{ 'CONTACT.EMAIL_ERROR_PATTERN' | translate }}</p>
+            }
             }
 
             <span>{{ 'CONTACT.MESSAGE_LABEL' | translate }}</span>
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" rows="5" [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate" required [class.invalid]="message.invalid && message.touched">
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" rows="5"
+                [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate" required
+                [class.invalid]="message.invalid && message.touched">
             </textarea>
             @if(message.invalid && message.touched) {
-                <p class="error">{{ 'CONTACT.MESSAGE_ERROR_REQUIRED' | translate }}</p>
+            <p class="error">{{ 'CONTACT.MESSAGE_ERROR_REQUIRED' | translate }}</p>
             }
 
             <div class="privacy-policy">
-                <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted" required #privacyCheckbox="ngModel" [class.invalid]="privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)">
+                <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted"
+                    required #privacyCheckbox="ngModel"
+                    [class.invalid]="privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)">
                 <label for="privacy">
                     {{ 'CONTACT.PRIVACY_POLICY' | translate }}
-                    <a routerLink="/privacy">{{ 'CONTACT.PRIVACY_POLICY_LINK' | translate }}</a>                </label>
-                 @if(privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)) {
-                    <p class="error">{{ 'CONTACT.PRIVACY_ERROR_REQUIRED' | translate }}</p>
+                    <a routerLink="/privacy">{{ 'CONTACT.PRIVACY_POLICY_LINK' | translate }}</a> </label>
+                @if(privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)) {
+                <p class="error">{{ 'CONTACT.PRIVACY_ERROR_REQUIRED' | translate }}</p>
                 }
             </div>
             @if(messageSent) {
-                <p class="success-message">{{ 'CONTACT.SEND_SUCCESS' | translate }}</p> 
-            }
+            <p class="success-message">{{ 'CONTACT.SEND_SUCCESS' | translate }}</p>
+            } 
             <button type="submit" [disabled]="contactForm.invalid">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
         </form>
     </div>

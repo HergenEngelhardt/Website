@@ -73,7 +73,8 @@
       "PRIVACY_POLICY": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie.",
       "PRIVACY_POLICY_LINK": "Datenschutzerklärung", 
       "PRIVACY_ERROR_REQUIRED": "Bitte akzeptieren Sie die Datenschutzerklärung.",
-      "SEND_BUTTON": "Senden"
+      "SEND_BUTTON": "Senden",
+      "SEND_SUCCESS": "Vielen Dank für Ihre Nachricht, ich werde mich schnellstmöglich bei Ihnen melden."
     },
     "FOOTER": {
       "IMPRINT": "Impressum",
