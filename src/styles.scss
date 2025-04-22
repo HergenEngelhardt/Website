@@ -1,38 +1,62 @@
-*{
+* {
     margin: 0;
     scroll-behavior: smooth;
-
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
-    background:linear-gradient(to right, #1c1c1c, #08463B);
+    font-family: 'Karla', 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #08463B);
     color: white;
     overflow-x: hidden;
-    width: 100%;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+
+    // max-width: 1440px;
     &::-webkit-scrollbar {
         display: none;
     }
+
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Karla', 'Poppins', sans-serif;
     color: #333;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
     color: inherit;
     cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url('./assets/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype-variations');
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: italic;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url('./assets/fonts/Karla/Karla-Italic-VariableFont_wght.ttf') format('truetype-variations');
 }
