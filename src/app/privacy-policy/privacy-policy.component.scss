@@ -1,0 +1,45 @@
+.privacy-container { // Changed from .imprint-container
+    padding: 40px 20px; 
+    max-width: 800px;
+    margin: 20px auto; 
+    background:linear-gradient(to right, #1c1c1c, #08463B);
+    color: white;  
+    border-radius: 8px; 
+  
+    h1, h2, h3 { 
+      color: white; 
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+  
+    h1 {
+      margin-top: 0; 
+    }
+  
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  
+    a {
+      color: #4db8ff; 
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #80ccff; 
+      }
+    }
+  
+    ul {
+      list-style: disc; 
+      margin-left: 20px;
+      margin-bottom: 15px;
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  
+    strong {
+       font-weight: bold; 
+    }
+}

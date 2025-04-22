@@ -33,8 +33,7 @@
                 <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyPolicyAccepted" required #privacyCheckbox="ngModel" [class.invalid]="privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)">
                 <label for="privacy">
                     {{ 'CONTACT.PRIVACY_POLICY' | translate }}
-                    <a href="/datenschutz" target="_blank">{{ 'CONTACT.PRIVACY_POLICY_LINK' | translate }}</a>
-                </label>
+                    <a routerLink="/privacy">{{ 'CONTACT.PRIVACY_POLICY_LINK' | translate }}</a>                </label>
                  @if(privacyCheckbox.invalid && (privacyCheckbox.touched || contactForm.submitted)) {
                     <p class="error">{{ 'CONTACT.PRIVACY_ERROR_REQUIRED' | translate }}</p>
                 }

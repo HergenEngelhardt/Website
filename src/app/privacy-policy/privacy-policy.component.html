@@ -1,0 +1,75 @@
+<div class="privacy-container">
+    <h1 [innerHTML]="'PRIVACY.TITLE' | translate"></h1>
+  
+    <h2 [innerHTML]="'PRIVACY.PREAMBLE_TITLE' | translate"></h2>
+    <p [innerHTML]="'PRIVACY.PREAMBLE_TEXT_1' | translate"></p>
+    <p [innerHTML]="'PRIVACY.PREAMBLE_TEXT_2' | translate"></p>
+    <p [innerHTML]="'PRIVACY.STATUS' | translate"></p>
+  
+    <h2 [innerHTML]="'PRIVACY.TOC_TITLE' | translate"></h2>
+    <ul>
+      <li><a href="#preamble" [innerHTML]="'PRIVACY.TOC_PREAMBLE' | translate"></a></li>
+      <li><a href="#controller" [innerHTML]="'PRIVACY.TOC_CONTROLLER' | translate"></a></li>
+      <li><a href="#processing-overview" [innerHTML]="'PRIVACY.TOC_PROCESSING_OVERVIEW' | translate"></a></li>
+      <li><a href="#legal-basis" [innerHTML]="'PRIVACY.TOC_LEGAL_BASIS' | translate"></a></li>
+      <li><a href="#security" [innerHTML]="'PRIVACY.TOC_SECURITY' | translate"></a></li>
+      <li><a href="#transmission" [innerHTML]="'PRIVACY.TOC_TRANSMISSION' | translate"></a></li>
+      <li><a href="#international-transfers" [innerHTML]="'PRIVACY.TOC_INTERNATIONAL_TRANSFERS' | translate"></a></li>
+      <li><a href="#storage-deletion" [innerHTML]="'PRIVACY.TOC_STORAGE_DELETION' | translate"></a></li>
+      <li><a href="#data-subject-rights" [innerHTML]="'PRIVACY.TOC_DATA_SUBJECT_RIGHTS' | translate"></a></li>
+      <li><a href="#hosting" [innerHTML]="'PRIVACY.TOC_HOSTING' | translate"></a></li>
+      <li><a href="#cookies" [innerHTML]="'PRIVACY.TOC_COOKIES' | translate"></a></li>
+      <li><a href="#contact-management" [innerHTML]="'PRIVACY.TOC_CONTACT_MANAGEMENT' | translate"></a></li>
+      <li><a href="#changes" [innerHTML]="'PRIVACY.TOC_CHANGES' | translate"></a></li>
+      <li><a href="#definitions" [innerHTML]="'PRIVACY.TOC_DEFINITIONS' | translate"></a></li>
+    </ul>
+  
+    <section id="preamble">
+      <h2 [innerHTML]="'PRIVACY.PREAMBLE_TITLE' | translate"></h2>
+      <p [innerHTML]="'PRIVACY.PREAMBLE_TEXT_1' | translate"></p>
+      <p [innerHTML]="'PRIVACY.PREAMBLE_TEXT_2' | translate"></p>
+    </section>
+  
+    <section id="controller">
+        <h2 [innerHTML]="'PRIVACY.CONTROLLER_TITLE' | translate"></h2>
+        <p [innerHTML]="'PRIVACY.CONTROLLER_NAME' | translate"></p>
+        <p [innerHTML]="'PRIVACY.CONTROLLER_STREET' | translate"></p>
+        <p [innerHTML]="'PRIVACY.CONTROLLER_CITY' | translate"></p>
+        <p>
+            <span [innerHTML]="'PRIVACY.CONTROLLER_EMAIL_LABEL' | translate"></span>
+            <a [href]="'mailto:' + ('PRIVACY.CONTROLLER_EMAIL_ADDRESS' | translate)" [innerHTML]="'PRIVACY.CONTROLLER_EMAIL_ADDRESS' | translate"></a>
+        </p>
+        <p>
+            <span [innerHTML]="'PRIVACY.CONTROLLER_IMPRINT_LABEL' | translate"></span>
+            <a [href]="'PRIVACY.CONTROLLER_IMPRINT_LINK' | translate" target="_blank" [innerHTML]="'PRIVACY.CONTROLLER_IMPRINT_LINK' | translate"></a>
+        </p>
+    </section>
+  
+    <section id="processing-overview">
+        <h2 [innerHTML]="'PRIVACY.PROCESSING_OVERVIEW_TITLE' | translate"></h2>
+        <p [innerHTML]="'PRIVACY.PROCESSING_OVERVIEW_TEXT' | translate"></p>
+        <h3 [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPES_TITLE' | translate"></h3>
+        <ul>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_1' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_2' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_3' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_4' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_5' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_DATA_TYPE_6' | translate"></li>
+        </ul>
+        <h3 [innerHTML]="'PRIVACY.PROCESSING_CATEGORIES_TITLE' | translate"></h3>
+        <ul>
+            <li [innerHTML]="'PRIVACY.PROCESSING_CATEGORY_1' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_CATEGORY_2' | translate"></li>
+        </ul>
+        <h3 [innerHTML]="'PRIVACY.PROCESSING_PURPOSES_TITLE' | translate"></h3>
+        <ul>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_1' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_2' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_3' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_4' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_5' | translate"></li>
+            <li [innerHTML]="'PRIVACY.PROCESSING_PURPOSE_6' | translate"></li>
+        </ul>
+    </section>
+</div>
