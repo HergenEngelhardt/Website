@@ -29,7 +29,7 @@ export class ContactFormularComponent {
   mailTest = false; 
   messageSent = false;
   post = {
-    endPoint: 'https://hergen-engelhardt.developerakademie.net/angular-projects/portfolio/sendMail.php', 
+    endPoint: 'engelhardt-hergen.de', 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
