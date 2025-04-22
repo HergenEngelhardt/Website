@@ -1,19 +1,18 @@
 <nav id="header">
     <div id="menu" [class.open]="menuOpen">
-        <a href="#personalInfoSection">{{ 'HEADER.ABOUT_ME' | translate }}</a>
-        <a href="#skillSection">{{ 'HEADER.SKILLS' | translate }}</a>
-        <a href="#projectList">{{ 'HEADER.PROJECTS' | translate }}</a>
         <div class="language-toggle-switch">
             <label class="switch">
-                <input type="checkbox"
-                       [checked]="translate.currentLang === 'en'"
-                       (change)="toggleLanguage($event)">
+                <input type="checkbox" [checked]="translate.currentLang === 'en'" (change)="toggleLanguage($event)">
                 <span class="slider round">
                     <span class="lang-text lang-de">DE</span>
                     <span class="lang-text lang-en">EN</span>
                 </span>
             </label>
         </div>
+        <a href="#personalInfoSection">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+        <a href="#skillSection">{{ 'HEADER.SKILLS' | translate }}</a>
+        <a href="#projectList">{{ 'HEADER.PROJECTS' | translate }}</a>
+
     </div>
     <div class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
         <span></span>
