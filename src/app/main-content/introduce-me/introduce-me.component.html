@@ -35,7 +35,8 @@
 <div class="social-links-vertical">
     <div class="social-link mail">
         <a href="mailto:mail@engelhardt-hergen.de">
-            <span>{{ 'INTRODUCE.EMAIL' | translate }}</span>
+            <span class="mail-text">{{ 'INTRODUCE.EMAIL' | translate }}</span>
+            <img class="mail-icon" [src]="assetService.getAssetUrl('img/mail.svg')" [alt]="'INTRODUCE.EMAIL_ALT' | translate">
         </a>
     </div>
     <div class="social-link github">

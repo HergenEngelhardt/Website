@@ -30,7 +30,7 @@
         height: 50%;
    }
     @media (max-width: 480px) {
-        height: 50vh;
+        height: 50%;
         width: 65%;
         border-radius: 10px; 
    }
@@ -38,7 +38,7 @@
 
 .personal-info {
     width: 30%;
-    height: 30vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
