@@ -73,7 +73,8 @@
       "PRIVACY_POLICY": "I have read and accept the privacy policy.",
       "PRIVACY_POLICY_LINK": "Privacy Policy", 
       "PRIVACY_ERROR_REQUIRED": "Please accept the privacy policy.",
-      "SEND_BUTTON": "Send"
+      "SEND_BUTTON": "Send",
+      "SEND_SUCCESS": "Your message has been sent successfully!" 
     },
     "FOOTER": {
       "IMPRINT": "Imprint",

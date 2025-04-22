@@ -26,10 +26,10 @@ export class ContactFormularComponent {
     privacyPolicyAccepted: false
   };
 
-  mailTest = true; 
-
+  mailTest = false; 
+  messageSent = false;
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php', 
+    endPoint: 'https://hergen-engelhardt.developerakademie.net/angular-projects/portfolio/sendMail.php', 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -40,12 +40,14 @@ export class ContactFormularComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    this.messageSent = false; 
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             console.log(response); 
             ngForm.resetForm();
+            this.messageSent = true;
           },
           error: (error) => {
             console.error(error);
@@ -55,6 +57,7 @@ export class ContactFormularComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
        console.log('Mail Test: Form valid and submitted', this.contactData); 
       ngForm.resetForm();
+      this.messageSent = true;
     } else {
        Object.values(ngForm.controls).forEach(control => {
         control.markAsTouched();

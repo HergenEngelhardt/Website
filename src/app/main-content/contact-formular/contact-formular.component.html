@@ -39,7 +39,9 @@
                     <p class="error">{{ 'CONTACT.PRIVACY_ERROR_REQUIRED' | translate }}</p>
                 }
             </div>
-
+            @if(messageSent) {
+                <p class="success-message">{{ 'CONTACT.SEND_SUCCESS' | translate }}</p> 
+            }
             <button type="submit" [disabled]="contactForm.invalid">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
         </form>
     </div>
