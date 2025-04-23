@@ -125,6 +125,12 @@
                 font-size: 0.9rem;
                 margin-top: 1rem;
             }
+            
+            button[type="submit"] {
+                padding: 8px 15px;
+                font-size: 14px;
+                margin-top: 1rem;
+            }
 
             .privacy-policy label {
                 font-size: 0.8rem;
@@ -174,6 +180,12 @@
             button {
                 padding: 0.7rem;
                 font-size: 0.85rem;
+                margin-top: 0.8rem;
+            }
+            
+            button[type="submit"] {
+                padding: 7px 12px;
+                font-size: 13px;
                 margin-top: 0.8rem;
             }
 
