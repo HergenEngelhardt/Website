@@ -44,18 +44,26 @@
         padding: 10px 20px;
         transition: all 0.3s;
         position: relative;
-        overflow: visible;
+        overflow: hidden; 
         min-width: 80px;
         white-space: nowrap;
     }
 
     >p a {
         display: inline-block;
-        transition: all 0.8s ease;
         color: white;
         text-decoration: none;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
     }
-
+    
+    >p a .button-text, 
+    >p a .button-text-duplicate {
+        display: inline-block;
+        transition: transform 0.5s ease;
+    }
+    
     >p:hover {
         border-color: #3DCFB6;
         cursor: pointer;
@@ -63,9 +71,11 @@
     }
 
     >p:hover a {
-        transform: translateX(-100px);
-        opacity: 0;
         color: #3DCFB6;
+    }
+    
+    >p:hover a .button-text {
+        animation: buttonSlideOut 1s forwards, buttonTickerMove 4s 1s infinite linear;
     }
 
     @media (max-width: 768px) {
@@ -100,6 +110,21 @@
             min-width: 70px;
         }
     }
+}
+
+@keyframes buttonSlideOut {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-120%); opacity: 0; }
+}
+
+@keyframes buttonTickerMove {
+    0% { transform: translateX(100%); opacity: 1; }
+    100% { transform: translateX(-120%); opacity: 1; }
+}
+
+@keyframes buttonTickerEntry {
+    0% { transform: translateX(100%); opacity: 1; }
+    100% { transform: translateX(-120%); opacity: 1; }
 }
 
 .small-info-section {

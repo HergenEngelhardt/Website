@@ -2,8 +2,17 @@
     <h1>{{ 'INTRODUCE.HEADLINE_PART1' | translate }} <br>
         {{ 'INTRODUCE.HEADLINE_PART2' | translate }}</h1>
     <div class="main-start-button">
-        <p><a [routerLink]="[]" [fragment]="'contactFormular'">{{ 'INTRODUCE.CONTACT_ME' | translate }}</a></p>
-        <p><a [routerLink]="[]" [fragment]="'projectList'">{{ 'INTRODUCE.MY_PROJECTS' | translate }}</a></p>    </div>
+        <p>
+            <a [routerLink]="[]" [fragment]="'contactFormular'" class="ticker-button">
+                <span class="button-text">{{ 'INTRODUCE.CONTACT_ME' | translate }}</span>
+            </a>
+        </p>
+        <p>
+            <a [routerLink]="[]" [fragment]="'projectList'" class="ticker-button">
+                <span class="button-text">{{ 'INTRODUCE.MY_PROJECTS' | translate }}</span>
+            </a>
+        </p>
+    </div>
 </div>
 
 <div class="small-info-section">
