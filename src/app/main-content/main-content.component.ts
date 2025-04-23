@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -20,7 +20,7 @@ import * as AOS from 'aos';
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
-export class MainContentComponent implements OnInit, OnDestroy {
+export class MainContentComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
@@ -32,13 +32,21 @@ export class MainContentComponent implements OnInit, OnDestroy {
         }
       }
     });
+  }
+
+  ngAfterViewInit(): void {
     AOS.init({
       duration: 800,
-      once: true,
+      once: false,
       offset: 100,
-  });
-  setTimeout(() => AOS.refresh(), 100);
-  } 
+      mirror: true,
+      disableMutationObserver: false
+    });
+    
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 300); 
+  }
 
   ngOnDestroy(): void { 
   }
