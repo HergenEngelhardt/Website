@@ -30,7 +30,7 @@
 }
 
 .main-start-button {
-    width: 55%;
+    width: 45%;
     height: 15%;
     margin-top: 20px;
     display: flex;
@@ -148,7 +148,7 @@
         display: flex;
         position: absolute;
         white-space: nowrap;
-        animation: tickerAnimation 20s linear infinite;
+        animation: tickerAnimation 25s linear infinite;
 
         .ticker-content {
             display: flex;
@@ -192,7 +192,7 @@
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-25%);
     }
 }
 
