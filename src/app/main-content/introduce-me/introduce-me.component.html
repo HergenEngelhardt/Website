@@ -2,9 +2,8 @@
     <h1>{{ 'INTRODUCE.HEADLINE_PART1' | translate }} <br>
         {{ 'INTRODUCE.HEADLINE_PART2' | translate }}</h1>
     <div class="main-start-button">
-        <p><a href="#contactFormular">{{ 'INTRODUCE.CONTACT_ME' | translate }}</a></p>
-        <p><a href="#projectList">{{ 'INTRODUCE.MY_PROJECTS' | translate }}</a></p>
-    </div>
+        <p><a [routerLink]="[]" [fragment]="'contactFormular'">{{ 'INTRODUCE.CONTACT_ME' | translate }}</a></p>
+        <p><a [routerLink]="[]" [fragment]="'projectList'">{{ 'INTRODUCE.MY_PROJECTS' | translate }}</a></p>    </div>
 </div>
 
 <div class="small-info-section">

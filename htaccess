@@ -1,12 +1,13 @@
 RewriteEngine On
 
+# Prevent domain duplication (add this rule)
+RewriteCond %{THE_REQUEST} /engelhardt-hergen\.de/
+RewriteRule ^engelhardt-hergen\.de/(.*)$ /$1 [R=301,L]
+
+# Existing rules
 RewriteCond %{REQUEST_FILENAME} -s [OR]
-
 RewriteCond %{REQUEST_FILENAME} -l [OR]
-
 RewriteCond %{REQUEST_FILENAME} -d
-
 RewriteRule ^.*$ - [NC,L]
-
 
 RewriteRule ^(.*) /index.html [NC,L]

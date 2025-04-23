@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { AssetService } from '../../models/asset-service/asset.service.js';
-import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
-
+import { TranslateModule } from '@ngx-translate/core'; 
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-introduce-me',
   standalone: true,
   imports: [
-    TranslateModule 
+    CommonModule, 
+    TranslateModule, 
+    RouterModule
   ],
   providers: [AssetService],
   templateUrl: './introduce-me.component.html',

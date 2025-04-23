@@ -9,10 +9,9 @@
                 </span>
             </label>
         </div>
-        <a href="#personalInfoSection">{{ 'HEADER.ABOUT_ME' | translate }}</a>
-        <a href="#skillSection">{{ 'HEADER.SKILLS' | translate }}</a>
-        <a href="#projectList">{{ 'HEADER.PROJECTS' | translate }}</a>
-
+        <a [routerLink]="[]" [fragment]="'personalInfoSection'">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+        <a [routerLink]="[]" [fragment]="'skillSection'">{{ 'HEADER.SKILLS' | translate }}</a>
+        <a [routerLink]="[]" [fragment]="'projectList'">{{ 'HEADER.PROJECTS' | translate }}</a>
     </div>
     <div class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
         <span></span>
@@ -20,6 +19,5 @@
         <span></span>
     </div>
     <div class="logo-header">
-        <img [src]="assetService.getAssetUrl('img/Logo.jpg')" [alt]="'HEADER.LOGO_ALT' | translate">
-    </div>
+        <a [routerLink]="[]" [fragment]="'header'"><img [src]="assetService.getAssetUrl('img/Logo.jpg')" [alt]="'HEADER.LOGO_ALT' | translate"></a>    </div>
 </nav>
