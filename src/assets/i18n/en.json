@@ -21,16 +21,16 @@
   },
   "PERSONAL_INFO": {
     "TITLE": "About me...",
-    "TEXT_P1": "I am Hergen Engelhardt and bring diverse professional experience from the hotel industry, customer service, sales, as well as logistics and purchasing. These roles have significantly shaped my organizational talent, communication skills, and solution-oriented approach.",
-    "TEXT_P2": "By successfully completing further training as a frontend developer, I have laid the foundation for my career in IT. I am currently deepening my knowledge in the backend area. I work with modern technologies such as HTML, CSS, JavaScript, TypeScript, Angular, Firebase, Git, and Scrum – always striving to write clean and user-friendly code.",
-    "TEXT_P3": "Alongside my professional development, I volunteer with the local fire department and am a passionate traveler – always curious about new places, cultures, and culinary discoveries.",
+    "TEXT_P1": "I’m Hergen Engelhardt and bring diverse professional experience from the hotel industry, customer service, sales, logistics, and purchasing. These roles have strongly shaped my organizational talent, communication skills, and solution-oriented mindset.",
+    "TEXT_P2": "After completing a training program as a frontend developer, I laid the foundation for my career in IT. What fascinates me about software development is the blend of logical problem-solving and the ability to transform creative ideas into functional applications. I’m currently deepening my backend knowledge to develop a holistic perspective as a developer.",
+    "TEXT_P3": "Beyond my professional life, I volunteer with the local fire department and love discovering the world – always curious about new perspectives, cultures, and culinary adventures.",
     "PROFILE_IMAGE_ALT": "Portrait"
   },
   "SKILLS": {
     "TITLE": "My Skills...",
-    "TEXT_P1": "I develop modern web applications using HTML, CSS, and JavaScript, specifically utilizing TypeScript and Angular to create high-performance and scalable solutions. UX and design are important to me – that's why I enjoy working with Figma to design user-friendly interfaces.",
-    "TEXT_P2": "For data storage and hosting, I use Firebase, while Git ensures structured version control. Agile methods like Scrum allow me to react flexibly to new requirements and work efficiently in a team.",
-    "TEXT_P3": "I have gained initial practical experience through projects such as: – a delivery app – a Pokédex with search functionality – a Kanban board – my own 2D game. These projects have shown me how much joy the combination of creative thinking and technical implementation brings – and how much potential lies in every new development step.",
+    "TEXT_P1": "I build modern web applications using HTML, CSS, and JavaScript, and leverage TypeScript and Angular to create high-performance, scalable solutions. Thoughtful UX and intuitive design are essential to me – that’s why I enjoy working with tools like Figma to create user-centered interfaces.",
+    "TEXT_P2": "I use Firebase for data management and hosting, and rely on Git for structured version control. Agile methodologies like Scrum enable me to work flexibly and efficiently in teams. My goal is to soon implement full-stack projects.",
+    "TEXT_P3": "I've gained practical experience through projects such as a delivery app, a searchable Pokédex, a Kanban board, and a custom-built 2D game. These projects highlight how much I enjoy combining creative thinking with technical implementation – and how every step brings new growth.",
     "ICON_ALT_HTML": "HTML Icon",
     "ICON_ALT_CSS": "CSS Icon",
     "ICON_ALT_JS": "JavaScript Icon",
