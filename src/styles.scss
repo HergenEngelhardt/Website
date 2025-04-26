@@ -67,4 +67,6 @@ body.overlay-open {
     height: 100%;
     padding-right: var(--scrollbar-width, 0);
     touch-action: none;
-  }
+    top: var(--scroll-position, 0px);
+    left: 0;
+}

@@ -23,9 +23,17 @@ export class ProjectOverlayComponent implements OnInit {
     this.selectedProject$ = this.overlayService.selectedProject$;
     this.overlaySubscription = this.showOverlay$.subscribe(isVisible => {
       if (isVisible) {
+        document.documentElement.style.setProperty(
+          '--scroll-position', 
+          `-${window.scrollY}px`
+        );
         document.body.classList.add('overlay-open');
       } else {
         document.body.classList.remove('overlay-open');
+        const scrollY = document.documentElement.style.getPropertyValue('--scroll-position');
+        if (scrollY) {
+          window.scrollTo(0, Math.abs(parseInt(scrollY || '0')));
+        }
       }
     });
   }
