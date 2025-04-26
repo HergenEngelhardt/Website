@@ -144,11 +144,15 @@
 
         .contactFormular-header,
         .contactFormular-input {
-            width: 83%;
+            width: 85%;
+            min-width: auto; 
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         .contactFormular-header h1 {
-            font-size: 26px;
+            font-size: 18px;
         }
 
         .contactFormular-header h3 {
@@ -176,7 +180,7 @@
             }
 
             button {
-                padding: 0.7rem;
+                padding: 0.5rem;
                 font-size: 0.85rem;
                 margin-top: 0.8rem;
             }
