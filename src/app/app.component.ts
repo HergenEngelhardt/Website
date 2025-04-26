@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateService } from '@ngx-translate/core';
+import { ProjectOverlayComponent } from './shared/components/project-overlay/project-overlay.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { TranslateService } from '@ngx-translate/core';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectOverlayComponent
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

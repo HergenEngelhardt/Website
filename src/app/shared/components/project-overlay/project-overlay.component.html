@@ -1,0 +1,31 @@
+<div class="overlay" *ngIf="(showOverlay$ | async) && (selectedProject$ | async)" (click)="closeOverlay()">
+    <div class="overlay-content" (click)="$event.stopPropagation()">
+      <span class="close-button" (click)="closeOverlay()">&times;</span>
+  
+      <div class="navigation-arrows">
+        <div class="arrow arrow-left" (click)="previousProject()">&#10094;</div>
+        <div class="arrow arrow-right" (click)="nextProject()">&#10095;</div>
+      </div>
+  
+      <div class="overlay-grid">
+        <div class="project-details">
+          <h2>{{ (selectedProject$ | async)?.name }}</h2>
+          <p>{{ (selectedProject$ | async)?.longDescription }}</p>
+  
+          <h3>{{ 'PROJECTS.OVERLAY_USED_TECHNOLOGIES' | translate }}</h3>
+          <ul class="technologies-list">
+            <li *ngFor="let tech of (selectedProject$ | async)?.technologies">{{ tech }}</li>
+          </ul>
+  
+          <div class="project-links">
+            <a [href]="(selectedProject$ | async)?.liveUrl" target="_blank" class="btn-primary">{{ 'PROJECTS.OVERLAY_LIVE_DEMO' | translate }}</a>
+            <a [href]="(selectedProject$ | async)?.githubUrl" target="_blank" class="btn-secondary">{{ 'PROJECTS.OVERLAY_GITHUB' | translate }}</a>
+          </div>
+        </div>
+  
+        <div class="project-image">
+          <img [src]="(selectedProject$ | async)?.imagePath" [alt]="'PROJECTS.OVERLAY_PROJECT_IMAGE_ALT' | translate:{projectName: (selectedProject$ | async)?.name}">
+        </div>
+      </div>
+    </div>
+  </div>
