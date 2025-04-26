@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AssetService } from '../../models/asset-service/asset.service.js';
+import { AssetService } from '../../models/asset-service/asset.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
