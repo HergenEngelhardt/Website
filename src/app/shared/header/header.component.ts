@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AssetService } from '../../models/asset-service/asset.service.js'; 
 import { TranslateModule, TranslateService } from '@ngx-translate/core'; 
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -29,5 +29,28 @@ export class HeaderComponent {
     this.translate.use(targetLang);
   }
   
-  constructor(public assetService: AssetService) {}
+  navigateToSection(fragment: string) {
+    if (this.menuOpen) {
+      this.toggleMenu();
+    }
+    
+    const currentUrl = this.router.url;
+    // Check for both regular routes and potential route variations
+    if (
+      currentUrl.includes('/imprint') || 
+      currentUrl.includes('/impressum') || // In case it's using German route
+      currentUrl.includes('/privacy') || 
+      currentUrl.includes('/datenschutz') || // In case it's using German route
+      !currentUrl.startsWith('/') // Special case for overlays without route change
+    ) {
+      // Navigate to home with fragment and also log for debugging
+      console.log('Navigating from:', currentUrl, 'to fragment:', fragment);
+      this.router.navigate(['/'], { fragment: fragment });
+    }
+  }
+  
+  constructor(
+    public assetService: AssetService,
+    private router: Router
+  ) {}
 }

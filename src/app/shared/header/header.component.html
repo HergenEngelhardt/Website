@@ -9,9 +9,9 @@
                 </span>
             </label>
         </div>
-        <a [routerLink]="[]" [fragment]="'personalInfoSection'">{{ 'HEADER.ABOUT_ME' | translate }}</a>
-        <a [routerLink]="[]" [fragment]="'skillSection'">{{ 'HEADER.SKILLS' | translate }}</a>
-        <a [routerLink]="[]" [fragment]="'projectList'">{{ 'HEADER.PROJECTS' | translate }}</a>
+        <a [routerLink]="[]" [fragment]="'personalInfoSection'" (click)="navigateToSection('personalInfoSection')">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+        <a [routerLink]="[]" [fragment]="'skillSection'" (click)="navigateToSection('skillSection')">{{ 'HEADER.SKILLS' | translate }}</a>
+        <a [routerLink]="[]" [fragment]="'projectList'" (click)="navigateToSection('projectList')">{{ 'HEADER.PROJECTS' | translate }}</a>
     </div>
     <div class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
         <span></span>
