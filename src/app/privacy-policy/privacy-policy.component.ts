@@ -3,6 +3,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ViewportScroller } from '@angular/common'
 
 @Component({
   selector: 'app-privacy-policy',
@@ -18,4 +19,9 @@ import { RouterModule } from '@angular/router';
 })
 export class PrivacyPolicyComponent {
 
+  constructor(private viewportScroller: ViewportScroller) {}
+  
+  ngOnInit(): void {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
 }
