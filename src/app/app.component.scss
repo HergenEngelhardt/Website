@@ -11,3 +11,8 @@
   app-footer {
     margin-top: auto;
   }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
