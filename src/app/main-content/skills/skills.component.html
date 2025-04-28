@@ -16,6 +16,12 @@
         <img [src]="assetService.getAssetUrl('tecicons/restapi.svg')" [alt]="'SKILLS.ICON_ALT_RESTAPI' | translate">
         <img [src]="assetService.getAssetUrl('tecicons/scrum.svg')" [alt]="'SKILLS.ICON_ALT_SCRUM' | translate">
         <img [src]="assetService.getAssetUrl('tecicons/ts.svg')" alt="TypeScript Icon">
-        <img [src]="assetService.getAssetUrl('tecicons/mind.svg')" [alt]="'SKILLS.ICON_ALT_FIGMA' | translate">
+
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/mind.svg')" [alt]="'SKILLS.ICON_ALT_FIGMA' | translate">
+            <div class="custom-tooltip">
+                <p>{{ 'SKILLS.PYTHON_SQL_INTEREST' | translate }}</p>
+            </div>
+        </div>
     </div>
 </div>

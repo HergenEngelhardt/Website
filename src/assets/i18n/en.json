@@ -40,7 +40,8 @@
     "ICON_ALT_GIT": "Git Icon",
     "ICON_ALT_RESTAPI": "REST API Icon",
     "ICON_ALT_SCRUM": "Scrum Icon",
-    "ICON_ALT_FIGMA": "Figma Icon"
+    "ICON_ALT_FIGMA": "Figma Icon",
+     "PYTHON_SQL_INTEREST": "I have a special interest in expanding my knowledge in Python and SQL."
   },
   "PROJECTS": {
     "TITLE": "Projects",
