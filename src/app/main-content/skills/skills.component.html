@@ -6,19 +6,60 @@
         <p>{{ 'SKILLS.TEXT_P3' | translate }}</p>
     </div>
     <div class="skill-icons">
-        <img [src]="assetService.getAssetUrl('tecicons/html.svg')" [alt]="'SKILLS.ICON_ALT_HTML' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/css.svg')" [alt]="'SKILLS.ICON_ALT_CSS' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/js.svg')" [alt]="'SKILLS.ICON_ALT_JS' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/md.svg')" [alt]="'SKILLS.ICON_ALT_MD' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/angular.svg')" [alt]="'SKILLS.ICON_ALT_ANGULAR' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/fb.svg')" [alt]="'SKILLS.ICON_ALT_FIREBASE' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/git.svg')" [alt]="'SKILLS.ICON_ALT_GIT' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/restapi.svg')" [alt]="'SKILLS.ICON_ALT_RESTAPI' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/scrum.svg')" [alt]="'SKILLS.ICON_ALT_SCRUM' | translate">
-        <img [src]="assetService.getAssetUrl('tecicons/ts.svg')" alt="TypeScript Icon">
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/html.svg')" [alt]="'SKILLS.ICON_ALT_HTML' | translate">
+            <p class="skill-label">HTML</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/css.svg')" [alt]="'SKILLS.ICON_ALT_CSS' | translate">
+            <p class="skill-label">CSS</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/js.svg')" [alt]="'SKILLS.ICON_ALT_JS' | translate">
+            <p class="skill-label">JavaScript</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/md.svg')" [alt]="'SKILLS.ICON_ALT_MD' | translate">
+            <p class="skill-label">Material Design</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/angular.svg')" [alt]="'SKILLS.ICON_ALT_ANGULAR' | translate">
+            <p class="skill-label">Angular</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/fb.svg')" [alt]="'SKILLS.ICON_ALT_FIREBASE' | translate">
+            <p class="skill-label">Firebase</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/git.svg')" [alt]="'SKILLS.ICON_ALT_GIT' | translate">
+            <p class="skill-label">Git</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/restapi.svg')" [alt]="'SKILLS.ICON_ALT_RESTAPI' | translate">
+            <p class="skill-label">REST API</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/scrum.svg')" [alt]="'SKILLS.ICON_ALT_SCRUM' | translate">
+            <p class="skill-label">Scrum</p>
+        </div>
+        
+        <div class="skill-icon-wrapper">
+            <img [src]="assetService.getAssetUrl('tecicons/ts.svg')" alt="TypeScript Icon">
+            <p class="skill-label">TypeScript</p>
+        </div>
 
+        <!-- Keep the tooltip only for this icon -->
         <div class="skill-icon-wrapper">
             <img [src]="assetService.getAssetUrl('tecicons/mind.svg')" [alt]="'SKILLS.ICON_ALT_FIGMA' | translate">
+            <p class="skill-label">Growth mindset</p>
             <div class="custom-tooltip">
                 <p>{{ 'SKILLS.PYTHON_SQL_INTEREST' | translate }}</p>
             </div>
