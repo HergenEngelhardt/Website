@@ -147,10 +147,12 @@
     .ticker-container {
         position: relative;
         white-space: nowrap;
-        animation: tickerAnimation 15s linear infinite;
+        display: flex;
         
         .ticker-content {
             display: inline-flex;
+            flex-shrink: 0;
+            animation: tickerAnimation 15s linear infinite;
         }
 
         p {
@@ -171,7 +173,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
