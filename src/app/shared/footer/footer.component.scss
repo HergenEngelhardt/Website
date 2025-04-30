@@ -38,6 +38,11 @@
     &:hover { 
         transform: scale(1.5);
     }
+
+    @media(max-width: 375px) {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 
