@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    font-size: 15px;
+    font-size: 18px;
 
     >p {
         border: #fff 1px solid;
@@ -75,7 +75,7 @@
     }
     
     >p:hover a .button-text {
-        animation: buttonSlideOut 1s forwards, buttonTickerMove 4s 1s infinite linear;
+        animation: buttonSlideOut 1s forwards, buttonTickerMove 4s 1s infinite linear !important;
     }
 
     @media (max-width: 768px) {

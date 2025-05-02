@@ -45,7 +45,7 @@
         font-size: 50px;
     }
     >p {
-        font-size: 18px;
+        font-size: 20px;
     }
     @media (max-width: 768px) {
         width: 80%;
@@ -53,7 +53,7 @@
         order: 0;
         padding: 15px;
         >p {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
@@ -62,7 +62,6 @@
     }
     @media (max-width: 375px) {
         padding: 12px;
-        font-size: 14px; 
         >h3 {
           font-size: 1.1rem;
         }
@@ -70,7 +69,7 @@
 }
 
 .skill-icons{
-    width: 50%;
+    width: 30%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +78,10 @@
     padding: 20px;
     gap: 15px;
     margin-right: 50px;
+    max-width: 400px;
+    >p{
+        font-size: 20px;
+    }
     > img {
         width: calc(25% - 15px);
         max-width: 110px;
