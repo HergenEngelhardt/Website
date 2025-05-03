@@ -26,10 +26,17 @@ export class MainContentComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        const element = document.getElementById(fragment);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) {
+            const headerOffset = window.innerWidth <= 768 ? 200 : 100;
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: elementPosition - headerOffset,
+              behavior: 'smooth'
+            });
+          }
+        }, 300);
       }
     });
   }
