@@ -13,33 +13,19 @@
     display: block;
     position: relative;
   }
-
-  #personalInfoContent {
+  
+  .section-wrapper {
     width: 100%;
-    max-width: 1232px;
-    margin: 0 auto;
-    padding: 60px 0;
-    position: relative;
-    height: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 
-  #skillSection {
-    width: 100%;
-    padding: 60px 0;
-    position: relative;
-    height: auto;
-  }
-
-  #projectList {
-    width: 100%;
-    padding: 60px 0;
-    position: relative;
-    height: auto;
-  }
-
+  #personalInfoContent,
+  #skillSection,
+  #projectList,
   #contactFormular {
     width: 100%;
-    max-width: 1248px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 60px 0;
     position: relative;
@@ -48,15 +34,14 @@
 }
 
 @media (max-width: 375px) {
-
-    app-introduce-me {
-      min-height: 350px; 
-    }
-
-    #personalInfoContent,
-    #skillSection,
-    #projectList,
-    #contactFormular {
-      padding: 30px 0; 
-    }
+  app-introduce-me {
+    min-height: 350px; 
   }
+
+  #personalInfoContent,
+  #skillSection,
+  #projectList,
+  #contactFormular {
+    padding: 30px 0; 
+  }
+}
