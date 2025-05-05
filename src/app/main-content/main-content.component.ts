@@ -29,14 +29,21 @@ export class MainContentComponent implements OnInit, OnDestroy, AfterViewInit {
         setTimeout(() => {
           const element = document.getElementById(fragment);
           if (element) {
-            const headerOffset = window.innerWidth <= 768 ? 200 : 100;
+            let headerOffset = 100; 
+            if (fragment === 'projectList') {
+              headerOffset = 180; 
+            } else if (fragment === 'skillSection') {
+              headerOffset = 100; 
+            } else if (fragment === 'contactSection') {
+              headerOffset = 120;
+            }
             const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
             window.scrollTo({
               top: elementPosition - headerOffset,
               behavior: 'smooth'
             });
           }
-        }, 300);
+        }, 400); 
       }
     });
   }
