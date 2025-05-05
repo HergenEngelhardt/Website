@@ -95,6 +95,14 @@
 
     @media (max-width: 480px) {
 
+        .contactFormular-header,
+        .contactFormular-input {
+            width: 86%;
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .contactFormular-header h1 {
             font-size: 30px;
         }
