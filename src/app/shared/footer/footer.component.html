@@ -1,15 +1,19 @@
 <section class="footer" id="footer">
-    <div class="footer-contact">
-        <a [routerLink]="[]" [fragment]="'header'" (click)="navigateHome()"><img [src]="assetService.getAssetUrl('img/Logo.jpg')" [alt]="'HEADER.LOGO_ALT' | translate"
-                id="logo"></a>
-    </div>
-    <div class="footer-copyright">
-        {{ 'FOOTER.COPYRIGHT' | translate }}
+    <div class="responsive-footer">
+        <div class="footer-contact">
+            <a [routerLink]="[]" [fragment]="'header'" (click)="navigateHome()"><img
+                    [src]="assetService.getAssetUrl('img/Logo.jpg')" [alt]="'HEADER.LOGO_ALT' | translate"
+                    id="logo"></a>
+        </div>
+
+        <div class="footer-copyright">
+            {{ 'FOOTER.COPYRIGHT' | translate }}
+        </div>
     </div>
     <div class="footer-links">
         <div class="GitHub">
             <a target="_blank" href="https://github.com/HergenEngelhardt">
-                Github 
+                Github
             </a>
         </div>
         <div class="LinkedIn">
