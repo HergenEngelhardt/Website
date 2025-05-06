@@ -14,22 +14,22 @@
     font-weight: 600;
     text-align: center;
     padding: 20px;
-    margin-bottom: 190px;
+    margin-bottom: 180px;
     margin-top: 3%;
 
     @media (max-width: 857px) {
         width: 90%;
         font-size: 25px;
-        margin-bottom: 130px;
+        margin-bottom: 140px;
     }
 
     @media (max-width: 480px) {
-
+        margin-bottom: 145px;
         font-size: 22px;
     }
 
     @media (max-width: 375px) {
-
+        margin-bottom: 180px;
         font-size: 20px;
 
     }
