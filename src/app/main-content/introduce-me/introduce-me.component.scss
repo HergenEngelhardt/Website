@@ -9,22 +9,22 @@
     font-weight: 600;
     text-align: center;
     padding: 20px;
-    margin-bottom: 180px;
+    margin-bottom: 190px;
 
     @media (max-width: 857px) {
         width: 90%;
-        font-size: 25rem;
-        margin-bottom: 200px;
+        font-size: 25px;
+        margin-bottom: 130px;
     }
 
     @media (max-width: 480px) {
 
-        font-size: 1.6rem;
+        font-size: 22px;
     }
 
     @media (max-width: 375px) {
 
-        font-size: 1.5rem;
+        font-size: 20px;
 
     }
 }
@@ -78,7 +78,7 @@
         animation: buttonSlideOut 1s forwards, buttonTickerMove 4s 1s infinite linear !important;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1065px) {
         width: 80%;
         flex-direction: column;
         align-items: center;
@@ -297,28 +297,18 @@ h1 {
     position: relative;
     transform: translateX(-50%);
 
-    @media (max-width: 992px) {
-        height: 280px;
-    }
 }
 
 .left-lateral {
     position: absolute;
     left: 30px;
-    top: 48%;
+    top: 55%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 0;
 
-    @media (max-width: 992px) {
-        top: 65%;
-    }
-
-    @media (max-width: 480px) {
-        top: 60%;
-    }
 }
 
 .arrow-down {
