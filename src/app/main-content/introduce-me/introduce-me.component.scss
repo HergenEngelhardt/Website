@@ -1,3 +1,8 @@
+:host {
+    display: block;
+    height: calc(100vh - 80px); 
+  }
+
 .main-start {
     width: 100%;
     display: flex;
@@ -10,6 +15,7 @@
     text-align: center;
     padding: 20px;
     margin-bottom: 190px;
+    margin-top: 3%;
 
     @media (max-width: 857px) {
         width: 90%;
@@ -280,12 +286,24 @@ h1 {
         }
 
     }
-}
 
-.social-link.mail {
-    rotate: -90deg;
-    position: relative;
-    top: -120px;
+    @media (max-height: 800px) {
+        right: 2%;
+        top: 52%;
+        .social-link.mail {
+            rotate: 0deg;
+            position: static;
+            top: auto;
+
+            .mail-text {
+                display: none;
+            }
+
+            .mail-icon {
+                display: inline;
+            }
+        }
+    }
 }
 
 .right-seperator {
