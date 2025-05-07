@@ -10,6 +10,7 @@
     height: calc(100vh - 130px);
     display: block;
     position: relative;
+    margin-bottom: 60px;
   }
   
   .section-wrapper {
@@ -35,6 +36,7 @@
 @media (max-width: 375px) {
   app-introduce-me {
     min-height: 350px; 
+    margin-bottom: 30px;
   }
 
   #personalInfoContent,
