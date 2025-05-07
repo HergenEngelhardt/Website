@@ -7,9 +7,7 @@
   overflow-x: hidden;
 
   app-introduce-me {
-    height: 100vh;
-    min-height: 700px;
-    max-height: 900px;
+    height: calc(100vh - 82px);
     display: block;
     position: relative;
   }
